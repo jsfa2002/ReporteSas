@@ -70,22 +70,22 @@ Sigue los siguientes pasos en orden:
      - Infracciones frecuentes y restricciones.  
    - **Tabla generada:** `base_legal_movilidad_faj`.
 
-   ### 2.5 `path_ruta.sas`
+   ### 2.5 `accidentes_unificado.sas`
+   - Integra todas las tablas en una sola:  
+     - Une accidentes, vehículos, personas, base legal y rutas.  
+   - **Tabla final:** `accidentes_unificado`.
+   - 
+   ### 2.6 `path_ruta.sas`
    - Simula trayectorias de movilidad (origen y destino):  
      - `ID_persona`, `latitud`, `longitud`, `calle`, `sector`, `tiempo`, `tipo_paso` (`origen`/`destino`).  
      - Se generan tiempos de salida y llegada, con duración aleatoria entre 10 y 40 minutos.  
    - **Tabla generada:** `rutas_movilidad_faj`.
 
-   ### 2.6 `rutas_transpuestas.sas`
+   ### 2.7 `rutas_transpuestas.sas`
    - Reestructura las rutas en formato transpuesto:  
      - Combina pasos de origen y destino por persona.  
      - Variables: `latitud_paso1`, `longitud_paso1`, `calle_paso1`, `sector_paso1`, `tiempo_paso1`, y sus equivalentes para paso 2.  
    - **Tabla generada:** `rutas_unificadas`.
-
-   ### 2.7 `accidentes_unificado.sas`
-   - Integra todas las tablas en una sola:  
-     - Une accidentes, vehículos, personas, base legal y rutas.  
-   - **Tabla final:** `accidentes_unificado`.
 
 3. **Visualización del Reporte**  
    - Abrir SAS Visual Analytics.  
