@@ -40,7 +40,7 @@ Sigue los siguientes pasos en orden:
 2. **Procesamiento de datos**  
    Ejecuta en orden los siguientes scripts, cada uno construye nuevas tablas con variables adicionales:
 
-   ### 2.1 `accidentes_bogota.sas`
+    2.1 `accidentes_bogota.sas`
    - Limpieza de la tabla `ACCIDENTES`:
      - Convierte latitud/longitud a numéricos.  
      - Redondea variables de tiempo (`año`, `mes`, `día`, `hora`).  
@@ -48,21 +48,21 @@ Sigue los siguientes pasos en orden:
      - Genera variables de fecha (`fecha_anio_mes`, `fecha_anio_mes_dia`).  
    - **Tabla generada:** `accidentes_corregido_final_txt`.
 
-   ### 2.2 `vehiculos_accidentes2.sas`
+    2.2 `vehiculos_accidentes2.sas`
    - Simula vehículos asociados a cada accidente:  
      - `ID_persona`, `placa`, `tipo_vehiculo`, `clase_servicio`, `marca`, `modelo`, `año_fabricacion`, `antiguedad`.  
      - Números de chasis y motor.  
    - Algunos individuos reciben más de un vehículo.  
    - **Tabla generada:** `vehiculos_final`.
 
-   ### 2.3 `personas_accidente_bogota.sas`
+    2.3 `personas_accidente_bogota.sas`
    - Simula características de las personas involucradas:  
      - `edad`, `genero`, `estado_civil`, `nivel_educativo`, `ocupacion`, `condicion_laboral`.  
      - `ingresos_mensuales`, `tipo_vivienda`, `num_personas_hogar`.  
      - Variables de contexto: `nacionalidad`, `municipio_nacimiento`, `zona`, `discapacidad`.  
    - **Tabla generada:** `personas_movilidad_faj`.
 
-   ### 2.4 `base_legal_accidentes.sas`
+    2.4 `base_legal_accidentes.sas`
    - Simula información legal asociada a conductores:  
      - `licencia_num`, `categoria`, `fecha_expedicion`, `fecha_vencimiento`.  
      - Estado de licencia (`vigente`, `suspendida`, `cancelada`).  
@@ -70,18 +70,18 @@ Sigue los siguientes pasos en orden:
      - Infracciones frecuentes y restricciones.  
    - **Tabla generada:** `base_legal_movilidad_faj`.
 
-   ### 2.5 `accidentes_unificado.sas`
+    2.5 `accidentes_unificado.sas`
    - Integra todas las tablas en una sola:  
      - Une accidentes, vehículos, personas, base legal y rutas.  
    - **Tabla final:** `accidentes_unificado`.
    - 
-   ### 2.6 `path_ruta.sas`
+    2.6 `path_ruta.sas`
    - Simula trayectorias de movilidad (origen y destino):  
      - `ID_persona`, `latitud`, `longitud`, `calle`, `sector`, `tiempo`, `tipo_paso` (`origen`/`destino`).  
      - Se generan tiempos de salida y llegada, con duración aleatoria entre 10 y 40 minutos.  
    - **Tabla generada:** `rutas_movilidad_faj`.
 
-   ### 2.7 `rutas_transpuestas.sas`
+    2.7 `rutas_transpuestas.sas`
    - Reestructura las rutas en formato transpuesto:  
      - Combina pasos de origen y destino por persona.  
      - Variables: `latitud_paso1`, `longitud_paso1`, `calle_paso1`, `sector_paso1`, `tiempo_paso1`, y sus equivalentes para paso 2.  
