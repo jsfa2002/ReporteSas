@@ -107,7 +107,7 @@ Esta estructura se puede ampliar o conectar con fuentes de datos reales para fut
 
 ---
 
-## � Autores
+##  Autores
 - **Jalenna Correa**  
 - **Juan Sebastián Fajardo**  
 
