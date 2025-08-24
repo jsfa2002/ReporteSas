@@ -21,13 +21,15 @@ Esto permite:
 ##  Requisitos
 
 - **SAS Studio** instalado o acceso vía servidor.  
-- Archivo CSV `datos_finales_exportado.csv` en la carpeta `/data`.  
+- Archivo CSV `datos_finales_exportado.csv` en este repositorio.  
 - Archivo JSON de configuración de rutas (se debe importar en SAS Studio).  
 - Acceso a SAS Visual Analytics para abrir el reporte final.  
 
 ---
 
 ##  Guía de Ejecución
+
+Todos los archivos necesarios están en este repositorio, los códigos están en la carpeta "code".
 
 Sigue los siguientes pasos en orden:
 
