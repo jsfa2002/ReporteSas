@@ -29,7 +29,7 @@ Esto permite:
 
 ##  Guía de Ejecución
 
-Todos los archivos necesarios están en este repositorio, los códigos están en la carpeta "code".
+Todos los archivos necesarios están en este repositorio, los códigos están en la carpeta "codigos_sas_movilidad".
 
 Sigue los siguientes pasos en orden:
 
