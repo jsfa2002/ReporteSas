@@ -35,7 +35,7 @@ Sigue los siguientes pasos en orden:
 
 1. **Importar los datos base**  
    - Ejecutar `carga_accidentes_bogota.sas`  
-   - Importa el CSV `datos_finales_exportado.csv` y el archivo `.JSON` de rutas/configuración.  
+   - Importa el CSV `accidentes_bogota_procesado.csv` en la carpeta zip llamada accidentes procesados, en este repositorio, y el archivo `.JSON` de rutas/configuración.  
 
 2. **Procesamiento de datos**  
    Ejecuta en orden los siguientes scripts, cada uno construye nuevas tablas con variables adicionales:
