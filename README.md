@@ -90,7 +90,7 @@ Sigue los siguientes pasos en orden:
 3. **Visualización del Reporte**  
    - Abrir SAS Visual Analytics.  
    - Cargar la tabla `accidentes_unificado`.  
-   - Explorar el Reporte de Movilidad, que permite analizar rutas, perfiles de conductores, accidentes y características asociadas.  
+   - Explorar el Reporte de Movilidad, en el repositorio se llama "DemoMovilidad", que permite analizar rutas, perfiles de conductores, accidentes y características asociadas.  
 
 ---
 
